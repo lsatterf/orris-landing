@@ -10,8 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         orris: {
-          gold: "#D6A64A",
-          "gold-light": "#E3B457",
+          gold: "#c9a857",
+          "gold-light": "#d4b76a",
           dark: "#07070A",
           card: "#0B0B0F",
         },

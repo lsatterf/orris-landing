@@ -1,68 +1,21 @@
 // app/page.tsx  (Next.js + Tailwind)
-// Drop-in landing page markup for getorris.com using your golden/dark Orris aesthetic.
-
-import React from "react";
+// Landing page content for getorris.com
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#07070A] text-zinc-100">
-      {/* Background glow */}
-      <div className="pointer-events-none fixed inset-0 -z-10">
-        <div className="absolute inset-0 bg-[radial-gradient(900px_circle_at_20%_10%,rgba(218,170,74,0.18),transparent_55%),radial-gradient(800px_circle_at_80%_30%,rgba(218,170,74,0.10),transparent_60%),radial-gradient(700px_circle_at_50%_90%,rgba(255,255,255,0.05),transparent_55%)]" />
-        <div className="absolute inset-0 opacity-[0.08] [background-image:linear-gradient(to_right,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:60px_60px]" />
-      </div>
-
-      {/* Top Nav */}
-      <header className="sticky top-0 z-20 border-b border-white/5 bg-[#07070A]/70 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <div className="flex items-center gap-3">
-            {/* Orris iris logo */}
-            <div>
-              <img src="/orris-iris.png" alt="Orris" className="h-8 w-8" />
-            </div>
-            <div className="leading-tight">
-              <div className="text-sm font-semibold tracking-wide text-[#D6A64A]">
-                Orris
-              </div>
-              <div className="text-xs text-zinc-400">Make sense of the world</div>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-3">
-            <a
-              href="#features"
-              className="hidden text-sm text-zinc-300 hover:text-white md:inline"
-            >
-              Features
-            </a>
-            <a
-              href="#privacy"
-              className="hidden text-sm text-zinc-300 hover:text-white md:inline"
-            >
-              Privacy
-            </a>
-            <a
-              href="#install"
-              className="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white hover:border-white/20 hover:bg-white/10"
-            >
-              Install Extension
-            </a>
-          </div>
-        </div>
-      </header>
-
+    <>
       {/* Hero */}
       <section className="mx-auto max-w-6xl px-6 pb-14 pt-14 md:pb-20 md:pt-20">
         <div className="grid items-center gap-10 md:grid-cols-[1.1fr_0.9fr]">
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-zinc-300">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#D6A64A]" />
+              <span className="h-1.5 w-1.5 rounded-full bg-[#c9a857]" />
               Quote-grounded. Neutral restatement. No preaching.
             </div>
 
             <h1 className="mt-5 text-balance text-4xl font-semibold tracking-tight md:text-5xl">
               Make sense of the world{" "}
-              <span className="text-[#D6A64A]">without being told what to think</span>.
+              <span className="text-[#c9a857]">without being told what to think</span>.
             </h1>
 
             <p className="mt-5 max-w-xl text-pretty text-base leading-relaxed text-zinc-300 md:text-lg">
@@ -74,7 +27,7 @@ export default function HomePage() {
               <a
                 // Replace with Chrome Web Store URL when live
                 href="#"
-                className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-[#D6A64A] px-6 py-3 text-sm font-semibold text-[#07070A] shadow-[0_18px_50px_rgba(214,166,74,0.22)] hover:bg-[#E3B457]"
+                className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-[#c9a857] px-6 py-3 text-sm font-semibold text-[#07070A] shadow-[0_18px_50px_rgba(214,166,74,0.22)] hover:bg-[#d4b76a]"
               >
                 🧭 Install the Chrome Extension
                 <span className="translate-x-0 text-[#07070A]/70 transition group-hover:translate-x-0.5">
@@ -95,7 +48,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* “Extension-style” demo card (matches your UI vibe) */}
+          {/* "Extension-style" demo card (matches your UI vibe) */}
           <div className="relative">
             <div className="rounded-3xl border border-white/10 bg-white/5 p-5 shadow-[0_30px_80px_rgba(0,0,0,0.6)]">
               <div className="flex items-center gap-3">
@@ -103,7 +56,7 @@ export default function HomePage() {
                   <img src="/orris-iris.png" alt="Orris" className="h-8 w-8" />
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-[#D6A64A]">Orris Scan</div>
+                  <div className="text-sm font-semibold text-[#c9a857]">Orris Scan</div>
                   <div className="text-xs text-zinc-400">Paste or analyze the current article</div>
                 </div>
               </div>
@@ -121,7 +74,7 @@ export default function HomePage() {
                   <span className="rounded-full border border-white/10 bg-white/5 px-2 py-1 text-[11px] text-zinc-300">
                     Appeal to fear
                   </span>
-                  <span className="rounded-full border border-[#D6A64A]/25 bg-[#D6A64A]/10 px-2 py-1 text-[11px] text-[#D6A64A]">
+                  <span className="rounded-full border border-[#c9a857]/25 bg-[#c9a857]/10 px-2 py-1 text-[11px] text-[#c9a857]">
                     Fact-Anchored Distortion
                   </span>
                 </div>
@@ -131,7 +84,7 @@ export default function HomePage() {
                 <button className="rounded-2xl border border-white/12 bg-white/5 px-4 py-3 text-sm font-semibold text-white hover:border-white/20 hover:bg-white/10">
                   Analyze
                 </button>
-                <button className="rounded-2xl bg-[#D6A64A] px-4 py-3 text-sm font-semibold text-[#07070A] hover:bg-[#E3B457]">
+                <button className="rounded-2xl bg-[#c9a857] px-4 py-3 text-sm font-semibold text-[#07070A] hover:bg-[#d4b76a]">
                   Analyze Article
                 </button>
               </div>
@@ -149,7 +102,7 @@ export default function HomePage() {
             Clarity in three steps
           </h2>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-zinc-300 md:text-base">
-            Orris doesn’t argue with the article. It separates what’s said from how it’s framed, then
+            Orris doesn't argue with the article. It separates what's said from how it's framed, then
             shows evidence so you can judge for yourself.
           </p>
 
@@ -213,19 +166,19 @@ export default function HomePage() {
             <h3 className="text-lg font-semibold text-white">Orris is</h3>
             <ul className="mt-4 space-y-3 text-sm text-zinc-300">
               <li className="flex gap-2">
-                <span className="text-[#D6A64A]">✓</span>
+                <span className="text-[#c9a857]">✓</span>
                 A companion for thinking clearly
               </li>
               <li className="flex gap-2">
-                <span className="text-[#D6A64A]">✓</span>
+                <span className="text-[#c9a857]">✓</span>
                 Transparent and quote-grounded
               </li>
               <li className="flex gap-2">
-                <span className="text-[#D6A64A]">✓</span>
+                <span className="text-[#c9a857]">✓</span>
                 Designed for real-world confusion
               </li>
               <li className="flex gap-2">
-                <span className="text-[#D6A64A]">✓</span>
+                <span className="text-[#c9a857]">✓</span>
                 Privacy-first by default
               </li>
             </ul>
@@ -270,7 +223,7 @@ export default function HomePage() {
             </div>
 
             <a
-              href="#"
+              href="/privacy"
               className="inline-flex items-center justify-center rounded-2xl border border-white/12 bg-white/5 px-6 py-3 text-sm font-semibold text-white hover:border-white/20 hover:bg-white/10"
             >
               Read privacy details
@@ -287,7 +240,7 @@ export default function HomePage() {
 
       {/* Founder Note */}
       <section className="mx-auto max-w-6xl px-6 pb-16">
-        <div className="relative overflow-hidden rounded-3xl border border-[#D6A64A]/25 bg-[#0B0B0F] p-8 md:p-12">
+        <div className="relative overflow-hidden rounded-3xl border border-[#c9a857]/25 bg-[#0B0B0F] p-8 md:p-12">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_60%_at_10%_10%,rgba(214,166,74,0.12),transparent_55%)]" />
 
           <div className="relative max-w-3xl">
@@ -320,8 +273,8 @@ export default function HomePage() {
             </p>
 
             <div className="mt-6 flex items-center gap-4">
-              <div className="h-px w-10 bg-[#D6A64A]/60" />
-              <div className="text-sm font-medium text-[#D6A64A]">
+              <div className="h-px w-10 bg-[#c9a857]/60" />
+              <div className="text-sm font-medium text-[#c9a857]">
                 Logan, Orris Founder
               </div>
             </div>
@@ -329,7 +282,7 @@ export default function HomePage() {
             <div className="mt-6">
               <a
                 href="/note"
-                className="inline-flex items-center gap-2 text-sm font-medium text-[#D6A64A] hover:text-[#E3B457]"
+                className="inline-flex items-center gap-2 text-sm font-medium text-[#c9a857] hover:text-[#d4b76a]"
               >
                 Read the full note
                 <span className="opacity-70">→</span>
@@ -341,20 +294,20 @@ export default function HomePage() {
 
       {/* Final CTA */}
       <section className="mx-auto max-w-6xl px-6 pb-20">
-        <div className="relative overflow-hidden rounded-3xl border border-[#D6A64A]/20 bg-[linear-gradient(180deg,rgba(214,166,74,0.10),rgba(255,255,255,0.03))] p-8 md:p-12">
+        <div className="relative overflow-hidden rounded-3xl border border-[#c9a857]/20 bg-[linear-gradient(180deg,rgba(214,166,74,0.10),rgba(255,255,255,0.03))] p-8 md:p-12">
           <div className="max-w-2xl">
             <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
               Clarity is a click away.
             </h2>
             <p className="mt-2 text-sm leading-relaxed text-zinc-200 md:text-base">
-              Install Orris and get a calm, quote-grounded read of what you’re looking at—before you
+              Install Orris and get a calm, quote-grounded read of what you're looking at—before you
               react to it.
             </p>
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <a
                 href="#"
-                className="inline-flex items-center justify-center rounded-2xl bg-[#D6A64A] px-6 py-3 text-sm font-semibold text-[#07070A] hover:bg-[#E3B457]"
+                className="inline-flex items-center justify-center rounded-2xl bg-[#c9a857] px-6 py-3 text-sm font-semibold text-[#07070A] hover:bg-[#d4b76a]"
               >
                 Install the Chrome Extension
               </a>
@@ -374,27 +327,7 @@ export default function HomePage() {
           <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-[radial-gradient(circle,rgba(214,166,74,0.35),transparent_60%)] blur-3xl" />
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="border-t border-white/5">
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-10 md:flex-row md:items-center md:justify-between">
-          <div className="text-sm text-zinc-400">
-            © {new Date().getFullYear()} Orris. All rights reserved.
-          </div>
-          <div className="flex gap-6 text-sm">
-            <a className="text-zinc-400 hover:text-white" href="#">
-              Privacy
-            </a>
-            <a className="text-zinc-400 hover:text-white" href="#">
-              Contact
-            </a>
-            <a className="text-zinc-400 hover:text-white" href="#features">
-              Features
-            </a>
-          </div>
-        </div>
-      </footer>
-    </main>
+    </>
   );
 }
 
@@ -402,8 +335,8 @@ function StepCard({ n, title, desc }: { n: string; title: string; desc: string }
   return (
     <div className="rounded-3xl border border-white/10 bg-[#0B0B0F] p-6">
       <div className="flex items-center justify-between">
-        <div className="text-xs font-semibold text-[#D6A64A]">STEP {n}</div>
-        <div className="h-2 w-2 rounded-full bg-[#D6A64A]/80" />
+        <div className="text-xs font-semibold text-[#c9a857]">STEP {n}</div>
+        <div className="h-2 w-2 rounded-full bg-[#c9a857]/80" />
       </div>
       <div className="mt-3 text-base font-semibold text-white">{title}</div>
       <p className="mt-2 text-sm leading-relaxed text-zinc-300">{desc}</p>
@@ -429,13 +362,13 @@ function FeatureCard({
           className={[
             "rounded-full border px-2.5 py-1 text-[11px]",
             accent
-              ? "border-[#D6A64A]/25 bg-[#D6A64A]/10 text-[#D6A64A]"
+              ? "border-[#c9a857]/25 bg-[#c9a857]/10 text-[#c9a857]"
               : "border-white/10 bg-white/5 text-zinc-300",
           ].join(" ")}
         >
           {tag}
         </span>
-        <span className="text-[#D6A64A]/70">✦</span>
+        <span className="text-[#c9a857]/70">✦</span>
       </div>
       <h3 className="mt-4 text-lg font-semibold text-white">{title}</h3>
       <p className="mt-2 text-sm leading-relaxed text-zinc-300">{desc}</p>
