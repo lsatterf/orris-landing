@@ -25,8 +25,9 @@ export default function HomePage() {
 
             <div id="install" className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
               <a
-                // Replace with Chrome Web Store URL when live
-                href="#"
+                href="https://chromewebstore.google.com/detail/orris/jkiealmpcbdjengdjlndcnocoggaalcj"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-[#c9a857] px-6 py-3 text-sm font-semibold text-[#07070A] shadow-[0_18px_50px_rgba(214,166,74,0.22)] hover:bg-[#d4b76a]"
               >
                 🧭 Install the Chrome Extension
@@ -306,7 +307,9 @@ export default function HomePage() {
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <a
-                href="#"
+                href="https://chromewebstore.google.com/detail/orris/jkiealmpcbdjengdjlndcnocoggaalcj"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-2xl bg-[#c9a857] px-6 py-3 text-sm font-semibold text-[#07070A] hover:bg-[#d4b76a]"
               >
                 Install the Chrome Extension

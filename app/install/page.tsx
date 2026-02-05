@@ -19,8 +19,9 @@ export default function InstallPage() {
 
           <div className="mt-5">
             <a
-              href="#"
-              // Replace with your Chrome Web Store URL once live
+              href="https://chromewebstore.google.com/detail/orris/jkiealmpcbdjengdjlndcnocoggaalcj"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-2xl bg-[#c9a857] px-6 py-3 text-sm font-semibold text-[#07070A] hover:bg-[#d4b76a]"
             >
               Install from Chrome Web Store →

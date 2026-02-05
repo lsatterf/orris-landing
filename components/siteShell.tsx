@@ -79,6 +79,9 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
               <Link className="text-zinc-400 hover:text-white" href="/press">
                 Press
               </Link>
+              <Link className="text-zinc-400 hover:text-white" href="/contact">
+                Contact
+              </Link>
             </div>
           </div>
 
